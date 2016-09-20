@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qf.tgp.plamtv.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/main_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/main_radio_button_recommend"
+            style="@style/main_radio_button"
+            android:text="@string/recommend"
+            android:textColor="@drawable/main_radio_button_text_color"
+            android:drawableTop="@drawable/main_recommend"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/main_radio_button_column"
+            style="@style/main_radio_button"
+            android:text="@string/column"
+            android:textColor="@drawable/main_radio_button_text_color"
+            android:drawableTop="@drawable/main_column"/>
+
+        <RadioButton
+            android:id="@+id/main_radio_button_live"
+            style="@style/main_radio_button"
+            android:text="@string/live"
+            android:textColor="@drawable/main_radio_button_text_color"
+            android:drawableTop="@drawable/main_live"/>
+
+        <RadioButton
+            android:id="@+id/main_radio_button_mine"
+            style="@style/main_radio_button"
+            android:text="@string/mine"
+            android:textColor="@drawable/main_radio_button_text_color"
+            android:drawableTop="@drawable/main_mine"/>
+
+
+
+    </RadioGroup>
+</LinearLayout>
