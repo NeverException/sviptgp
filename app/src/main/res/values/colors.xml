@@ -7,5 +7,7 @@
     <color name="selected_text_color">#FF5253</color>
     <color name="unselected_text_color">#FFB0B1</color>
     <color name="color_white">#ffffff</color>
+    <color name="color_gray">#33ffffff</color>
+    <color name="color_white_one">#c6c3c3</color>
 
 </resources>

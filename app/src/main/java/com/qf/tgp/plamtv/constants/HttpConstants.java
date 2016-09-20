@@ -7,4 +7,9 @@ public class HttpConstants {
 
     // 栏目页面网址
     public static String COLUMN_URL = "http://www.quanmin.tv/json/categories/list.json?09191932&device=355066062641818&v=2.1.3&screen=2&ch=OT_wdjcpd&sh=1920&sw=1080&uid=a219b8aa&net=0&ver=4&os=1";
+
+    //直播页面网址
+    public static String LIVE_URL = "http://www.quanmin.tv/json/play/list.json?09192003&device=861735031937211&v=2.1.3&screen=2&ch=xiaomi&sh=1920&sw=1080&uid=d465c87&net=0&ver=4&os=1";
+
+
 }
