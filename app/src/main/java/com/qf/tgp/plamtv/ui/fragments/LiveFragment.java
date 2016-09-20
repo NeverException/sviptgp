@@ -22,4 +22,14 @@ public class LiveFragment extends BaseFragment {
         layout = inflater.inflate(R.layout.fragment_live,container,false);
         return layout;
     }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        initView();
+    }
+
+    private void initView() {
+
+    }
 }
