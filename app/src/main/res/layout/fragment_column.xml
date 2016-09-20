@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ff0000">
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_header_height"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="栏目"
+            android:gravity="center"
+            android:textSize="@dimen/fragment_header_text_size"/>
+
+        <ImageView
+            android:id="@+id/column_search"
+            android:layout_width="@dimen/search_image_dimens"
+            android:layout_height="@dimen/search_image_dimens"
+            android:src="@drawable/search_image_selector"
+            android:layout_gravity="end|center_vertical"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/column_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>

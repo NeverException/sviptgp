@@ -21,7 +21,6 @@ public class ColumnFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         layout = inflater.inflate(R.layout.fragment_column,container,false);
-        Log.e(TAG, "onCreateView: ");
         return layout;
     }
 }
