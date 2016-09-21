@@ -2,7 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="#00ff00"
               android:orientation="vertical">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/live_chat_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_zhibo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <CheckBox
+            android:id="@+id/live_chat_hot"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/live_chat_hot_seletor"
+            android:button="@null"/>
+
+        <EditText
+            android:id="@+id/live_chat_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_shape"
+            android:hint="不发弹幕真的不寂寞吗?"
+            android:paddingLeft="5dp"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/live_chat_gift"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/live_gift"/>
+    </LinearLayout>
 </LinearLayout>

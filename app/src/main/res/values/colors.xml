@@ -15,6 +15,8 @@
     <!-- 主界面内容的背景色 -->
     <color name="content_background_color">#f9eceff1</color>
     <color name="color_red">#ff0000</color>
+    <color name="color_zhibo">#0900ffe1</color>
+    <color name="color_view">#0f000000</color>
 
 
 </resources>

@@ -101,6 +101,7 @@ public class LiveActivity extends BaseActivity implements View.OnTouchListener, 
             mLiveActivityGuanzhu.setOnCheckedChangeListener(this);
         }
         initDataFromNet();
+        initViewPager();
     }
 
     private void initDataFromNet() {
@@ -152,7 +153,7 @@ public class LiveActivity extends BaseActivity implements View.OnTouchListener, 
         //控制条
         mController = findViewById(R.id.tong_controller);
 
-        initViewPager();
+
 
     }
 
@@ -160,7 +161,6 @@ public class LiveActivity extends BaseActivity implements View.OnTouchListener, 
      * 初始化viewpager+tab
      */
     private void initViewPager() {
-
         List<Fragment> data = new ArrayList<>();
         LiveChatFragment liveChatFragment = new LiveChatFragment();
         LiveRankingFragment liveRankingFragment = new LiveRankingFragment();
@@ -210,11 +210,10 @@ public class LiveActivity extends BaseActivity implements View.OnTouchListener, 
                 }
                 break;
             case R.id.live_activity_guanzhu:
-                if (mLiveActivityGuanzhu.isChecked()) {
+                if (!mLiveActivityGuanzhu.isChecked()) {
                     mLiveActivityGuanzhu.setText("关注");
                 }else{
                     mLiveActivityGuanzhu.setText("已关注");
-
                 }
                 break;
         }
