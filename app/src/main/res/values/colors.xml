@@ -10,4 +10,9 @@
     <color name="color_gray">#33ffffff</color>
     <color name="color_white_one">#c6c3c3</color>
 
+    <color name="column_item_text_color">#f9eceff1</color>
+    <!-- 主界面内容的背景色 -->
+    <color name="content_background_color">#f9eceff1</color>
+
+
 </resources>
