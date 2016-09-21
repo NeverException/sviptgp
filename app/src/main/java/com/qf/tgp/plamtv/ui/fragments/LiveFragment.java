@@ -1,6 +1,5 @@
 package com.qf.tgp.plamtv.ui.fragments;
 
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,7 +18,7 @@ import com.qf.tgp.plamtv.BaseFragment;
 import com.qf.tgp.plamtv.R;
 import com.qf.tgp.plamtv.adapters.LiveAdapter;
 import com.qf.tgp.plamtv.constants.HttpConstants;
-import com.qf.tgp.plamtv.model.LiveModel;
+import com.qf.tgp.plamtv.model.live.LiveModel;
 import com.qf.tgp.plamtv.ui.activitys.LiveActivity;
 import com.qf.tgp.plamtv.utils.HttpUtils;
 
@@ -134,6 +133,4 @@ public class LiveFragment extends BaseFragment implements LiveAdapter.onItemClic
         intent.putExtras(extras);
         getActivity().startActivity(intent);
     }
-
-
 }

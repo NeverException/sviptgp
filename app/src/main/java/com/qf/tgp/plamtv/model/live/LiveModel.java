@@ -1,4 +1,4 @@
-package com.qf.tgp.plamtv.model;
+package com.qf.tgp.plamtv.model.live;
 
 import android.os.Parcel;
 import android.os.Parcelable;

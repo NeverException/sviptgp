@@ -1,7 +1,6 @@
 package com.qf.tgp.plamtv.adapters;
 
 import android.content.Context;
-import android.graphics.ImageFormat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.qf.tgp.plamtv.R;
-import com.qf.tgp.plamtv.model.LiveModel;
+import com.qf.tgp.plamtv.model.live.LiveModel;
 
 import org.xutils.image.ImageOptions;
 import org.xutils.x;
@@ -53,6 +52,7 @@ public class LiveAdapter extends RecyclerView.Adapter<LiveAdapter.ViewHolder> im
                 .setSquare(false)
                 .setRadius(10)
                 .setImageScaleType(ImageView.ScaleType.FIT_XY)
+                .setLoadingDrawableId(R.mipmap.live_default)
                 .build();
     }
 

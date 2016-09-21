@@ -1,13 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.qf.tgp.plamtv.ui.activitys.LiveActivity">
 
-</RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qf.tgp.plamtv.ui.activitys.MyVideoView
+            android:id="@+id/tong_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <RelativeLayout
+            android:id="@+id/tong_controller"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/tong_video_play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="#5500ff00"
+                android:button="@null"
+                android:checked="true"/>
+
+            <CheckBox
+                android:id="@+id/tong_full_screen"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="#220000ff"
+                android:button="@null"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/live_activity_nick_thumb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/img_touxiang_default"
+            android:paddingRight="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/live_activity_nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nick"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/live_activity_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="content"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/live_activity_guanzhu"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:button="@null"
+            android:drawableTop="@drawable/live_activity_guanzhu_selector"
+            android:gravity="center"
+            android:text="关注"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/live_activity_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/color_red"
+        app:tabIndicatorColor="@color/color_red"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/live_activity_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
