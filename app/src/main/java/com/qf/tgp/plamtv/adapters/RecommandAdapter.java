@@ -1,6 +1,7 @@
 package com.qf.tgp.plamtv.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import com.qf.tgp.plamtv.R;
 import com.qf.tgp.plamtv.model.recommandmode.ListViewMode;
+import com.qf.tgp.plamtv.ui.activitys.Recommand_intent;
 
 import org.xutils.image.ImageOptions;
 import org.xutils.x;
@@ -31,9 +33,10 @@ public class RecommandAdapter extends ListviewBaseAdapter<List<ListViewMode.bean
     private ImageOptions optionsSmall= optionsSmall = new ImageOptions.Builder()
             .setCircular(true)
             .build();
-
+    private Context context;
     public RecommandAdapter(List<List<ListViewMode.bean>> data, Context context, int itemId) {
         super(data, context, itemId);
+        this.context=context;
     }
 
     @Override
@@ -129,13 +132,8 @@ public class RecommandAdapter extends ListviewBaseAdapter<List<ListViewMode.bean
     public void onClick(View v) {
         String tag = (String) v.getTag();
         Log.e(TAG, "onClick: "+tag );
-        switch (v.getId()) {
-            case R.id.recommand_item01:
-                Log.e(TAG, "onClick: "+1 );
-                break;
-            case R.id.recommand_item02:
-                Log.e(TAG, "onClick: "+2);
-                break;
-        }
+        Intent intent = new Intent(context, Recommand_intent.class);
+        intent.putExtra("URL",tag);
+        context.startActivity(intent);
     }
 }

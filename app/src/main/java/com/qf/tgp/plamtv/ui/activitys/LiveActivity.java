@@ -131,7 +131,8 @@ public class LiveActivity extends BaseActivity implements View.OnTouchListener, 
     }
 
     private void initView() {
-        Vitamio.initialize(this);
+        //Vitamio.initialize(this);
+        Vitamio.isInitialized(this);
         mVideoView = (MyVideoView) findViewById(R.id.tong_video_view);
         mVideoView.setOnTouchListener(this);
         String src = mResult.getLive().getWs().getHls().getFlv3().getSrc();

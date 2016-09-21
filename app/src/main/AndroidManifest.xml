@@ -25,7 +25,8 @@
         <activity android:name=".ui.activitys.LiveActivity" />
         <activity android:name=".ui.activitys.ColumnSecondActivity" />
         <activity android:name=".ui.activitys.ColumnThirdActivity" />
-        <activity android:name=".ui.activitys.SearchActivity"></activity>
+        <activity android:name=".ui.activitys.SearchActivity" />
+        <activity android:name=".ui.activitys.Recommand_intent"></activity>
     </application>
 
 </manifest>
