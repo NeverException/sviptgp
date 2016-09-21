@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:clickable="false">
+
+
+    <LinearLayout
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <View
+                android:background="#C62F2F"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:gravity="left|center"
+                android:layout_gravity="center"
+                android:id="@+id/father_title"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="英雄联盟"
+                android:textSize="15dp" />
+            <TextView
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/recommand_item_chouchou"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/chouchouselector"
+                android:gravity="right|center"
+                android:text="瞅瞅"
+                android:textColor="@drawable/chouchoutext"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/recommand_item01"
+                 android:paddingRight="10dp"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+                    <ImageView
+                        android:id="@+id/recommand_item01_ivlarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher" />
+                    <TextView
+                        android:id="@+id/recommand_item01_renshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#313335"
+                        android:drawableLeft="@mipmap/abc_ic_go_search_api_mtrl_alpha"
+                        android:gravity="left|center"
+                        android:text="110.6万人看"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/recommand_item01_small"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/recommand_item01_text01"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:text="老骚男"
+                            android:textSize="10dp" />
+                        <TextView
+                            android:id="@+id/recommand_item01_text02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="弟弟救我1111111111111111111111111111111111111111111111111111111111"
+                            android:textColor="#898989"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/recommand_item02"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+                    <ImageView
+                        android:id="@+id/recommand_item02_ivlarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher" />
+                    <TextView
+                        android:id="@+id/recommand_item02_renshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#313335"
+                        android:drawableLeft="@mipmap/abc_ic_go_search_api_mtrl_alpha"
+                        android:gravity="left|center"
+                        android:text="110.6万人看"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/recommand_item02_small"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/recommand_item02_text01"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:text="老骚男"
+                            android:textSize="10dp" />
+                        <TextView
+                            android:id="@+id/recommand_item02_text02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="弟弟救我1111111111111111111111111111111111111111111111111111111111"
+                            android:textColor="#898989"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/recommand_item03"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+                    <ImageView
+                        android:id="@+id/recommand_item03_ivlarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher" />
+                    <TextView
+                        android:id="@+id/recommand_item03_renshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#313335"
+                        android:drawableLeft="@mipmap/abc_ic_go_search_api_mtrl_alpha"
+                        android:gravity="left|center"
+                        android:text="110.6万人看"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/recommand_item03_small"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/recommand_item03_text01"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:text="老骚男"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/recommand_item03_text02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="弟弟救我1111111111111111111111111111111111111111111111111111111111"
+                            android:textColor="#898989"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/recommand_item04"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+                    <ImageView
+                        android:id="@+id/recommand_item04_ivlarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher" />
+                    <TextView
+                        android:id="@+id/recommand_item04_renshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#313335"
+                        android:drawableLeft="@mipmap/abc_ic_go_search_api_mtrl_alpha"
+                        android:gravity="left|center"
+                        android:text="110.6万人看"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/recommand_item04_small"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/recommand_item04_text01"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:text="老骚男"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/recommand_item04_text02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:text="弟弟救我1111111111111111111111111111111111111111111111111111111111"
+                            android:textColor="#898989"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#C5C5C7"></View>
+</LinearLayout>
