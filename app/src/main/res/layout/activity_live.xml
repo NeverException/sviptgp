@@ -85,7 +85,7 @@
 
         <CheckBox
             android:id="@+id/live_activity_guanzhu"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="40dp"
             android:button="@null"
@@ -94,11 +94,15 @@
             android:text="关注"/>
 
     </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_view"/>
     <android.support.design.widget.TabLayout
         android:id="@+id/live_activity_tab"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/color_white"
         app:tabSelectedTextColor="@color/color_red"
         app:tabIndicatorColor="@color/color_red"/>
 
