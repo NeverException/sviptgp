@@ -7,7 +7,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/fragment_header_height"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        android:paddingRight="10dp"
+        android:background="@color/color_white">
 
         <TextView
             android:layout_width="match_parent"
@@ -16,11 +17,11 @@
             android:gravity="center"
             android:textSize="@dimen/fragment_header_text_size"/>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/column_search"
             android:layout_width="@dimen/search_image_dimens"
             android:layout_height="@dimen/search_image_dimens"
-            android:src="@drawable/search_image_selector"
+            android:background="@drawable/search_image_selector"
             android:layout_gravity="end|center_vertical"/>
 
     </FrameLayout>
@@ -29,6 +30,8 @@
         android:id="@+id/column_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:background="@color/column_item_text_color"/>
 
 </LinearLayout>

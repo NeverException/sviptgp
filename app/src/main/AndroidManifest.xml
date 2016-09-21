@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.qf.tgp.plamtv">
+    package="com.qf.tgp.plamtv">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".TVApp"
@@ -13,17 +13,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".BaseActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BaseActivity" />
         <activity android:name=".ui.activitys.SplashActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activitys.LiveActivity">
-        </activity>
+        <activity android:name=".ui.activitys.LiveActivity" />
+        <activity android:name=".ui.activitys.ColumnSecondActivity" />
+        <activity android:name=".ui.activitys.ColumnThirdActivity" />
+        <activity android:name=".ui.activitys.SearchActivity"></activity>
     </application>
 
 </manifest>

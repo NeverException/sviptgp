@@ -8,5 +8,7 @@
     <!-- 顶部栏字体大小 -->
     <dimen name="fragment_header_text_size">22sp</dimen>
     <!-- 顶部查找图片的大小 -->
-    <dimen name="search_image_dimens">30dp</dimen>
+    <dimen name="search_image_dimens">25dp</dimen>
+    <!-- 顶部返回按钮的大小 -->
+    <dimen name="header_back_dimens">30dp</dimen>
 </resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qf.tgp.plamtv.ui.activitys.ColumnSecondActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_header_height"
+        android:background="@color/color_white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/column_second_back"
+            android:layout_width="@dimen/header_back_dimens"
+            android:layout_height="@dimen/header_back_dimens"
+            android:src="@mipmap/ic_search_back"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/column_second_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="英雄联盟"
+            android:textSize="@dimen/fragment_header_text_size"
+            android:layout_gravity="center|fill_horizontal"
+            android:gravity="center"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/column_second_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:background="@color/content_background_color"/>
+
+</LinearLayout>
