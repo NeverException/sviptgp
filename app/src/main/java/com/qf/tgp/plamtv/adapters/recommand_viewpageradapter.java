@@ -26,6 +26,7 @@ public class recommand_viewpageradapter extends FragmentPagerAdapter {
         if (data!=null) {
             this.data.addAll(data);
         }
+        notifyDataSetChanged();
     }
     @Override
     public Fragment getItem(int position) {

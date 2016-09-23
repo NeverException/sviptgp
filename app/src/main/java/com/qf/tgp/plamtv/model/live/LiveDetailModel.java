@@ -1,17 +1,21 @@
 package com.qf.tgp.plamtv.model.live;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.SerializedName;
 import com.qf.tgp.plamtv.http.JsonParser;
 
 import org.xutils.http.annotation.HttpResponse;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by Administrator on 2016/9/21.
  */
 @HttpResponse(parser = JsonParser.class)
-public class LiveDetailModel {
+public class LiveDetailModel implements Serializable{
 
 
     /**
@@ -91,7 +95,7 @@ public class LiveDetailModel {
             this.ws = ws;
         }
 
-        public class WsBean {
+        public class WsBean implements Serializable{
             private String name;
             private HlsBean hls;
 
@@ -212,12 +216,41 @@ public class LiveDetailModel {
     private List<RankWeek> rank_total;
     private List<RankWeek> rank_curr;
 
-    public class RankWeek {
+    public class RankWeek implements Parcelable {
+        @Override
+        public String toString() {
+            return "RankWeek{" +
+                    "send_uid='" + send_uid + '\'' +
+                    ", send_nick='" + send_nick + '\'' +
+                    ", rank='" + rank + '\'' +
+                    ", icon_url='" + icon_url + '\'' +
+                    ", change='" + change + '\'' +
+                    '}';
+        }
+
         private String send_uid;
         private String send_nick;
         private String rank;
         private String icon_url;
         private String change;
+        private String icon;
+        private String score;
+
+        public String getScore() {
+            return score;
+        }
+
+        public void setScore(String score) {
+            this.score = score;
+        }
+
+        public String getIcon() {
+            return icon;
+        }
+
+        public void setIcon(String icon) {
+            this.icon = icon;
+        }
 
         public String getSend_uid() {
             return send_uid;
@@ -257,6 +290,18 @@ public class LiveDetailModel {
 
         public void setChange(String change) {
             this.change = change;
+        }
+
+        @Override
+        public int describeContents() {
+            return 0;
+        }
+
+        @Override
+        public void writeToParcel(Parcel dest, int flags) {
+            dest.writeString(send_nick);
+            dest.writeString(icon_url);
+            dest.writeString(change);
         }
     }
 

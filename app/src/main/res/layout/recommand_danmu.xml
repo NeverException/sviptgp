@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 <ListView
+    android:background="#CBCBCB"
     android:layout_weight="1"
     android:id="@+id/recommand_intent_lv"
     android:layout_width="wrap_content"
@@ -12,18 +13,32 @@
         android:layout_width="match_parent"
         android:layout_height="40dp">
         <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/re"
             android:layout_width="30dp"
             android:layout_height="30dp"
              android:src="@drawable/recommand_re"/>
-
-        <EditText
-            android:drawableRight="@drawable/recommand_send"
+        <LinearLayout
+            android:layout_weight="1"
             android:background="@drawable/edittext"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <EditText
+            android:background="@null"
+            android:id="@+id/input"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/recommand_send"/>
+        </LinearLayout>
         <ImageView
-
+            android:id="@+id/gift"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@mipmap/live_gift"/>

@@ -16,7 +16,7 @@ import java.util.Map;
  * Created by nfkj on 2016/9/13.
  */
 public abstract class ListviewBaseAdapter<T> extends BaseAdapter {
-    private List<T> data;
+    public List<T> data;
     private LayoutInflater inflater;
     private int ItemId;
 

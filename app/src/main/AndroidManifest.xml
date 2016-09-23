@@ -22,11 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activitys.LiveActivity" />
+        <activity android:name=".ui.activitys.LiveActivity" android:configChanges="keyboardHidden|screenSize|orientation"/>
         <activity android:name=".ui.activitys.ColumnSecondActivity" />
         <activity android:name=".ui.activitys.ColumnThirdActivity" />
         <activity android:name=".ui.activitys.SearchActivity" />
-        <activity android:name=".ui.activitys.Recommand_intent"></activity>
+        <activity android:name=".ui.activitys.Recommand_intent" android:configChanges="keyboardHidden|screenSize|orientation">
+
+        </activity>
     </application>
 
 </manifest>

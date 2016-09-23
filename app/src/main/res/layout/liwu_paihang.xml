@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RadioGroup
+        android:layout_marginTop="5dp"
+        android:id="@+id/rg"
+        android:background="@drawable/rbpress"
+        android:divider="@null"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="200dp"
+        android:layout_height="40dp">
+        <RadioButton
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/zongbang"
+            android:gravity="right|center"
+            android:id="@+id/test1"
+            android:button="@null"
+            android:checked="true"
+            android:text="贡献场榜"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+        <RadioButton
+            android:layout_marginRight="2dp"
+android:layout_weight="1"
+            android:id="@+id/test2"
+            android:background="@drawable/zhoubang"
+            android:button="@null"
+            android:text="贡献周榜"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+    </RadioGroup>
 <ListView
     android:id="@+id/liwupaihang_lv"
     android:layout_width="match_parent"
