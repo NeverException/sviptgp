@@ -133,7 +133,7 @@ public class Recommand_intent extends AppCompatActivity implements Callback.Comm
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
+        test.stopPlayback();
     }
 
     @Override
@@ -148,7 +148,6 @@ public class Recommand_intent extends AppCompatActivity implements Callback.Comm
                 break;
             case R.id.screenchange:
                 if (isChecked) {
-
                     oldheight = test.getHeight();
                     getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);//旋转屏幕
                     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
